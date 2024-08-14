@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Young;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+
+    --fs-body: 16px;
+    }
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Stone150);
+    font-family: Outfit;
+}
+
+.container {
+    min-width: 40vw;
+    width: 45vw;
+    height: fit-content;
+    background-color: var(--White);
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 30px;
+    color: var(--Stone600)
+}
+
+.dish {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.name {
+    font-family: Young;
+    margin: 10px 0;
+    color: var(--Stone900);
+}
+
+.description {
+    font-size: var(--fs-body);
+}
+
+.time {
+    background-color: var(--Rose50);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; 
+}
+
+.time h3 {
+    color: var(--Rose800)
+}
+
+ul, ol {
+    margin: 20px;
+}
+
+.time ul li::marker {
+    color: var(--Rose800);
+}
+
+ li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#heading {
+    font-family: Young;
+    color: var(--Brown800);
+    margin-top: 20px;
+}
+
+.ingredients, .instructions {
+    border-bottom: var(--Stone150) solid 2px;
+}
+
+.ingredients ul li::marker {
+    color: var(--Brown800);
+}
+
+ol li::marker {
+    font-weight: bold;
+    color: var(--Brown800);
+}
+
+.nutri-copy {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+
+
+tr td{
+    border-bottom: var(--Stone150) solid 1.6px;
+    padding: 20px;
+}
+
+tr td:nth-child(2) {
+    padding-left: auto;
+    font-weight: bold;
+    color: var(--Brown800);
+}
+
+
+@media (max-width: 800px) {
+    .container{
+        width: 100vh;
+        margin-top: 0;
+        border-radius: 0;
+    }
+}
